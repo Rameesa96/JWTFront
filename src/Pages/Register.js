@@ -112,7 +112,7 @@ const data=await axios.post("http://localhost:8008/user/", credentials).then(res
             />
           </div>
           <div className='form-group'>
-            <button class="loginsubmit" onClick={handleClick} >Create Account</button>
+            <button class="uk-button uk-button-primary loginsubmit" onClick={handleClick} >Create Account</button>
           </div>
           <p className='ps'>Have an account?<Link to='/'>Sign in</Link></p>
         </form>

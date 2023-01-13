@@ -18,6 +18,14 @@ import {DndProvider,useDrag,useDrop} from 'react-dnd'
 import {HTML5Backend} from 'react-dnd-html5-backend'
 import update from 'immutability-helper'
 
+const initialDnDState = {
+  draggedFrom: null,
+  draggedTo: null,
+  isDragging: false,
+  originalOrder: [],
+  updatedOrder: []
+ }
+ 
 const type ="DraggableBodyRow"
 const columns = [
   { id: 'No', label: 'No', minWidth: 170 },
