@@ -110,6 +110,12 @@ const handleClick = async (e) => {
     const [data ,setData]=useState('')
    
     React.useEffect(()=>{
+      const token = JSON.parse(localStorage.getItem("token"))
+      const config={
+          headers:{
+          Authorization:`Bearer ${token}`
+          }
+        }
     axios.get(`http://localhost:8008/item/${itemid}`,config).then(response=>{
         setData(response.data)
     }).catch((error) => {
