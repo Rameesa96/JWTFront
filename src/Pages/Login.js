@@ -40,7 +40,7 @@ function Login() {
     
  
 const data=await axios.post("http://localhost:8008/user/login/", credentials).then(response=>{
-  if(response.status===200){
+  
     dispatch(loadlogindata(response.data))
     localStorage.setItem("token",JSON.stringify(response.data.token))
     
@@ -55,8 +55,8 @@ const data=await axios.post("http://localhost:8008/user/login/", credentials).th
   ).then(function() {
     window.location = "/home";
 })}
-}).catch((error) => {
-  if(error.response) setError("Not Authorized User....... Please Login");
+).catch((error) => {
+  if(error.response) setError(error.response.data);
 
 });
  
@@ -71,9 +71,9 @@ const data=await axios.post("http://localhost:8008/user/login/", credentials).th
         
         <p className='loginhead'>Login to CompanyName</p>
       </section>
-
-      <section className='form'>
       <span className='span'>{error}</span>
+      <section className='form'>
+      
         <form >
           <div className='form-group loginform'>
             <input
