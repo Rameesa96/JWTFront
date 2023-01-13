@@ -53,13 +53,20 @@ background: none;
     color:#3f6ad8 !important;
     font-size: 18px !important;
   
-
-        
+text-align: center !important;
+margin-top: 30px;
+background: none;
+    font-weight: 450 !important;
+    font-family: 'Poppins', sans-serif !important;
+   
+    border: none;     
 }
-/* .accord{
-    height: 60px;
-    
-} */ */
+.text{
+    color:#3f6ad8 !important;
+    font-size: 18px !important;
+   
+}
+
 .title1{
     align-self: flex-start !important;
     color:#3f6ad8 !important;

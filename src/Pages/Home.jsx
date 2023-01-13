@@ -112,7 +112,7 @@ const {loginList} = useSelector((state) => state.data1);
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography className='textaccord'><ListIcon style={{color:'#3f6ad8',fontSize:"25px",marginRight:"15px"}} /> Item List</Typography>
+          <Typography className='text'><ListIcon style={{color:'#3f6ad8',fontSize:"25px",marginRight:"15px"}} /> Item List</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -126,7 +126,7 @@ const {loginList} = useSelector((state) => state.data1);
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography className='textaccord' align='center'><AddBoxIcon style={{color:'#3f6ad8',fontSize:"25px",marginRight:"15px"}} /> Add Item</Typography>
+          <Typography className='text' align='center'><AddBoxIcon style={{color:'#3f6ad8',fontSize:"25px",marginRight:"15px"}} /> Add Item</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -140,7 +140,7 @@ const {loginList} = useSelector((state) => state.data1);
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography className='textaccord' align='center'><LogoutIcon style={{color:'#3f6ad8',fontSize:"25px",marginRight:"15px"}} />Logout</Typography>
+          <Typography className='text' align='center'><LogoutIcon style={{color:'#3f6ad8',fontSize:"25px",marginRight:"15px"}} />Logout</Typography>
         </AccordionSummary>
        
       </Accordion>
